@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
@@ -12,9 +14,21 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "BrotherDev",
-        ),
+        title: Text("BrotherDev"),
+      ),
+      body: Column(
+        //mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+
+        children: [
+          Center(
+            child: Image(
+              image: AssetImage("image/nahid.jpg"),
+              height: 200,
+              width: 200,
+            ),
+          )
+        ],
       ),
     );
   }
